@@ -1,0 +1,36 @@
+{
+  "name": "mattress-ipsum",
+  "version": "1.0.0",
+  "description": "Mattress Ipsum Dolor amet",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "prepare": "npm run build",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craig1123/mattress-ipsum.git"
+  },
+  "keywords": [
+    "mattress",
+    "lorem",
+    "ipsum"
+  ],
+  "author": "Craig Walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/craig1123/mattress-ipsum/issues"
+  },
+  "homepage": "https://github.com/craig1123/mattress-ipsum#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.5"
+  }
+}
