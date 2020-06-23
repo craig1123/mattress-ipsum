@@ -9,9 +9,9 @@
   ],
   "scripts": {
     "build:web": "gatsby build",
-    "dev": "gatsby develop",
+    "dev": "gatsby develop -o",
     "serve": "gatsby serve",
-    "deploy": "gatsby build:web --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "tsc",
     "format": "prettier --write src/**/*.{ts,tsx,js,jsx}",
     "prepare": "npm run build",
