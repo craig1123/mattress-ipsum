@@ -5,13 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
 
-import GithubCorner from "./GithubCorner"
-import Footer from "./Footer"
-import "../styles/default.css"
+import GithubCorner from './GithubCorner';
+import Footer from './Footer';
+import '../styles/default.css';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,12 +24,13 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <GithubCorner />
         <div
           style={{
-            padding: "0 1rem",
+            minHeight: '91vh',
+            padding: '0 1rem',
           }}
         >
           <main>{children}</main>
@@ -38,10 +39,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

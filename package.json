@@ -11,10 +11,11 @@
     "build:web": "gatsby build",
     "dev": "gatsby develop",
     "serve": "gatsby serve",
+    "deploy": "gatsby build:web --prefix-paths && gh-pages -d public",
     "build": "tsc",
     "format": "prettier --write src/**/*.{ts,tsx,js,jsx}",
     "prepare": "npm run build",
-    "version": "npm run format && git add -A src",
+    "version": "npm run format && git add -A",
     "postversion": "git push && git push --tags"
   },
   "repository": {
@@ -44,6 +45,7 @@
     "gatsby-plugin-sitemap": "^2.4.6",
     "gatsby-source-filesystem": "^2.3.13",
     "gatsby-transformer-sharp": "^2.5.6",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

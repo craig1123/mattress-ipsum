@@ -1,9 +1,9 @@
 module.exports = {
+  pathPrefix: '/mattress-ipsum',
   siteMetadata: {
     title: `Mattress Ipsum`,
     description: `The most comfortable lorem ipsum generator. Snuggle up!`,
     author: `@craigwalker1123`,
-    // siteUrl: `https://gatsby-starter-landing-page.netlify.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
