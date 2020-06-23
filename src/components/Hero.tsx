@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useCopyClipboard } from 'react-recipes';
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import mattressIpsum from '../../lib/index';
 import Button from './Button';
 import headerImage from '../images/header.png';
@@ -21,6 +22,7 @@ const Hero = () => {
   const [isCopied, setIsCopied] = useCopyClipboard();
 
   const copy = () => {
+    // @ts-ignore
     setIsCopied(ipsum);
   };
 
@@ -29,6 +31,10 @@ const Hero = () => {
     const para = numOfPara > 50 ? 50 : numOfPara;
     const word = numOfWords > 500 ? 50 : numOfWords;
     setIpsum(mattressIpsum(para, word));
+    trackCustomEvent({
+      category: 'Generate',
+      action: 'Click',
+    });
   };
 
   return (
