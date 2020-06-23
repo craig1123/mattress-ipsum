@@ -1,14 +1,15 @@
 # mattress-ipsum
 
-A lorem ipsum generators for mattresses.
+The most comfortable lorem ipsum generator. Snuggle up!
 
 ### Set Up
+
 `npm install --save mattress-ipsum`
 
 ```js
-import mattressIpsum from 'mattress-ipsum'
+import mattressIpsum from 'mattress-ipsum';
 
-const ipsum = mattressIpsum()
+const ipsum = mattressIpsum();
 ```
 
 ### Options
@@ -17,7 +18,7 @@ const ipsum = mattressIpsum()
 - 2nd parameter: number of words in paragraph. Defaults to 250.
 
 ```js
-import mattressIpsum from 'mattress-ipsum'
+import mattressIpsum from 'mattress-ipsum';
 
-const ipsum = mattressIpsum(3, 500)
+const ipsum = mattressIpsum(3, 500);
 ```
