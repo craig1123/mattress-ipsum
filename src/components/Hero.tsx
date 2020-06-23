@@ -16,10 +16,19 @@ const backgroundStyle = {
 
 const Hero = () => {
   const [ipsum, setIpsum] = useState(() => mattressIpsum());
+  const [numOfPara, setNumOfPara] = useState(4);
+  const [numOfWords, setNumOfWords] = useState(50);
   const [isCopied, setIsCopied] = useCopyClipboard();
 
   const copy = () => {
     setIsCopied(ipsum);
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const para = numOfPara > 50 ? 50 : numOfPara;
+    const word = numOfWords > 500 ? 50 : numOfWords;
+    setIpsum(mattressIpsum(para, word));
   };
 
   return (
@@ -28,11 +37,36 @@ const Hero = () => {
       <div style={backgroundStyle} />
       <h1 style={{ textAlign: 'center' }}>Mattress Ipsum</h1>
       <p style={{ textAlign: 'center', maxWidth: '475px' }}>The most comfortable Lorem Ipsum Generator. Snuggle in!</p>
-      <Button onClick={() => setIpsum(mattressIpsum())} style={{ marginBottom: '20px' }}>
-        Generate
-      </Button>
+      <form onSubmit={onSubmit} className="form-wrapper">
+        <div>
+          <label>Paragraphs </label>
+          <input
+            type="number"
+            min={1}
+            max={50}
+            value={numOfPara}
+            onChange={(e) => setNumOfPara(Number(e.target.value))}
+            className="hero-input"
+          />
+        </div>
+        <div>
+          <label>Phrases </label>
+          <input
+            type="number"
+            min={1}
+            max={500}
+            value={numOfWords}
+            onChange={(e) => setNumOfWords(Number(e.target.value))}
+            className="hero-input"
+          />
+        </div>
+        <Button>Generate</Button>
+      </form>
       <div style={{ position: 'relative', width: '100%', height: 30 }}>
-        <p onClick={copy} style={{ position: 'absolute', right: 0, top: 0, color: 'red', cursor: 'pointer' }}>
+        <p
+          onClick={copy}
+          style={{ position: 'absolute', right: 0, top: 0, color: isCopied ? 'red' : 'black', cursor: 'pointer' }}
+        >
           {isCopied ? 'Copied' : 'Copy'}
         </p>
       </div>

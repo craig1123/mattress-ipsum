@@ -94,22 +94,22 @@ const getUniqueWord = randomNoRepeats(mattressWords);
 
 // generates a paragraph from random sentences
 const getParagraph = (numOfWordsInParagraph: number) => {
-  let paragraph = '';
+  let paragraph: string[] = [];
   // Set the minimum number of words
-  let firstSentence = true;
+  let firstWord = true;
   while (paragraph.length < numOfWordsInParagraph) {
-    if (firstSentence) {
+    if (firstWord) {
       paragraph = paragraph.concat(getUniqueWord());
-      paragraph = paragraph.charAt(0).toUpperCase() + paragraph.slice(1);
-      firstSentence = false;
+      paragraph[0] = paragraph[0].charAt(0).toUpperCase() + paragraph[0].slice(1);
+      firstWord = false;
     } else {
-      paragraph = paragraph.concat(' ' + getUniqueWord());
+      paragraph = paragraph.concat(getUniqueWord());
     }
   }
-  return paragraph;
+  return paragraph.join(' ');
 };
 
-const mattressIpsumGenerator = (numberOfParagraphs = 4, numOfWordsInParagraph = 500) => {
+const mattressIpsumGenerator = (numberOfParagraphs = 4, numOfWordsInParagraph = 50) => {
   let allParagraphs = [];
   // Generate the number of paragraphs as specified by the user
   while (allParagraphs.length < numberOfParagraphs) {

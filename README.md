@@ -25,7 +25,7 @@ const ipsum = mattressIpsum();
 ### Options
 
 - 1st parameter: number of paragraphs. Default to 4.
-- 2nd parameter: number of words in paragraph. Defaults to 500.
+- 2nd parameter: number of words in paragraph. Defaults to 50.
 
 ```js
 import mattressIpsum from 'mattress-ipsum';
