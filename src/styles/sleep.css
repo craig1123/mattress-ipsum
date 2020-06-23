@@ -1,0 +1,19 @@
+.sleep-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.sleep-image {
+  left: 1rem;
+  position: absolute;
+  top: 1rem;
+  width: 250px;
+}
+
+@media (max-width: 900px) {
+  .sleep-image {
+    margin: auto;
+    position: relative;
+    width: 200px;
+  }
+}

@@ -11146,6 +11146,11 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-recipes@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-recipes/-/react-recipes-1.0.2.tgz#18e9a27e981110637de4e6aae86f3d611dc14039"
+  integrity sha512-HmL4f5NPK9kJKR9IKskBd367mLuCmpposbWJVhwrS/Qd91qRt63TfLnqU9I+yH3z443MsPxh6VmJJrPS8ZFTiA==
+
 react-reconciler@^0.24.0:
   version "0.24.0"
   resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.24.0.tgz#5a396b2c2f5efe8554134a5935f49f546723f2dd"

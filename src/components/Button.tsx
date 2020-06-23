@@ -13,8 +13,8 @@ const btnStyle = {
   cursor: 'pointer',
 };
 
-const Button = ({ children, ...rest }) => (
-  <button style={btnStyle} {...rest}>
+const Button = ({ children, style, ...rest }) => (
+  <button style={{ ...style, ...btnStyle }} {...rest}>
     {children}
   </button>
 );

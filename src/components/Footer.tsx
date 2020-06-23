@@ -6,10 +6,7 @@ import { COLORS } from '../styles/constants';
 const footerStyle = {
   padding: '1rem',
   backgroundColor: COLORS.lightGray,
-  position: 'absolute',
-  bottom: 0,
-  left: 0,
-  right: 0,
+  width: '100%',
   zIndex: -1,
 };
 
@@ -17,7 +14,6 @@ const gridStyle = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'flex-end',
-  padding: '1rem 2rem',
   fontSize: '.85rem',
 };
 

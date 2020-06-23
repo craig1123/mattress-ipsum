@@ -1,6 +1,6 @@
 {
   "name": "mattress-ipsum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The most comfortable lorem ipsum generator. Snuggle up!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -48,6 +48,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-recipes": "^1.0.2",
     "sharp": "^0.25.4",
     "typescript": "^3.9.5"
   }

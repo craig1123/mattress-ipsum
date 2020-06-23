@@ -109,7 +109,7 @@ const getParagraph = (numOfWordsInParagraph: number) => {
   return paragraph;
 };
 
-const mattressIpsumGenerator = (numberOfParagraphs = 5, numOfWordsInParagraph = 250) => {
+const mattressIpsumGenerator = (numberOfParagraphs = 4, numOfWordsInParagraph = 500) => {
   let allParagraphs = [];
   // Generate the number of paragraphs as specified by the user
   while (allParagraphs.length < numberOfParagraphs) {
