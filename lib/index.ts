@@ -92,7 +92,7 @@ const randomNoRepeats = (array: string[]) => {
 
 const getUniqueWord = randomNoRepeats(mattressWords);
 
-// Method to the GenerateNewText constructor function that generates a paragraph from random sentences
+// generates a paragraph from random sentences
 const getParagraph = (numOfWordsInParagraph: number) => {
   let paragraph = '';
   // Set the minimum number of words
