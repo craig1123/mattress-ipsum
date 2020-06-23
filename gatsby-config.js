@@ -4,6 +4,7 @@ module.exports = {
     title: `Mattress Ipsum`,
     description: `The most comfortable lorem ipsum generator. Snuggle up!`,
     author: `@craigwalker1123`,
+    siteUrl: `https://craig1123.github.io/mattress-ipsum/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
