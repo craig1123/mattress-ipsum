@@ -2,6 +2,8 @@
 
 The most comfortable lorem ipsum generator. Snuggle up!
 
+[https://craig1123.github.io/mattress-ipsum/](https://craig1123.github.io/mattress-ipsum/)
+
 ![](https://badgen.net/bundlephobia/minzip/mattress-ipsum)
 ![](https://badgen.net/npm/dt/mattress-ipsum)
 ![](https://img.shields.io/badge/license-MIT-green.svg)
