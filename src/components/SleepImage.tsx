@@ -1,7 +1,7 @@
 import React from 'react';
 // import man from '../images/man.gif';
 
-import starfish from '../images/starfish.gif';
+import starfish from '../images/starfish.png';
 
 import '../styles/sleep.css';
 

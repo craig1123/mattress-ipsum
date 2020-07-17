@@ -3,7 +3,7 @@ import { useCopyClipboard } from 'react-recipes';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import mattressIpsum from '../../lib/index';
 import Button from './Button';
-import headerImage from '../images/header.png';
+import headerImage from './../images/header.png';
 import '../styles/hero.css';
 
 const backgroundStyle = {
